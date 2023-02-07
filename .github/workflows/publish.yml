@@ -10,7 +10,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: samsung/lpvs
+  IMAGE_NAME: tiokim/lpvs
 
 jobs:
   publish:
