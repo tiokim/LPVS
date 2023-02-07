@@ -10,7 +10,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: tiokim/lpvs
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   publish:
