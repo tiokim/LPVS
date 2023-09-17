@@ -36,7 +36,7 @@ services:
       timeout: 20s
       retries: 10
     volumes:
-      - ./mysql-lpvs-data:/var/lib/mysql # db storage
+      #- ./mysql-lpvs-data:/var/lib/mysql # db storage
       - ./src/main/resources/database_dump.sql:/docker-entrypoint-initdb.d/init.sql # init for creating db lpvs with predifined tables
       ##- ./conf/my.cnf:/etc/mysql/my.cnf # custom mysql config- if needed 
     networks:
