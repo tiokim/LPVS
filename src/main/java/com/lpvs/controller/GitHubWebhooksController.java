@@ -69,6 +69,8 @@ public class GitHubWebhooksController {
     private static final String SUCCESS = "Success";
     private static final String ERROR = "Error";
     private static final String ALGORITHM = "HmacSHA256";
+    private static final String SI = "X-Hub-Signature-256";
+    private static final String SU = "Success";
 
     public GitHubWebhooksController(LPVSQueueService queueService, LPVSGitHubService gitHubService, LPVSQueueRepository queueRepository, @Value("${github.secret:}") String GITHUB_SECRET, LPVSExitHandler exitHandler) {
         this.queueService = queueService;
